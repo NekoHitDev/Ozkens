@@ -15,6 +15,8 @@ spring:
     url: jdbc:h2:mem:archive_dag_test
     username: sa
     password: password
-neo:
-  n3:
-    rpc-base: # TODO Finish this
+neo.n3:
+  node-url: http://10.172.1.11:20332/
+  nekoin-script-hash: "0x0ee8873f41537b7e14cbeb8d9d72176e7d137aee"
+  asset-map-prefix-base64: YXNzZXQ=
+  wallet-wif: L3WoUBKw2qENfT8QuK1fqBxKE1zCXNNtCbNkPVz6tjMm9CvZrxvv

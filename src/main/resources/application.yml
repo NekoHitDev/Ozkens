@@ -1,0 +1,24 @@
+server:
+  port: 8888
+logging:
+  level:
+    root: info
+    com.nekohit.neo.snapshot: debug
+spring:
+  jpa:
+    show-sql: false
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://10.172.1.10:5432/nekohit_ozkens
+    password: password
+    username: postgres
+neo.n3:
+  node-url: http://127.0.0.1:10332/
+  nekoin-script-hash: "0x0ee8873f41537b7e14cbeb8d9d72176e7d137aee"
+  asset-map-prefix-base64: YXNzZXQ=
+  wallet-wif: L3WoUBKw2qENfT8QuK1fqBxKE1zCXNNtCbNkPVz6tjMm9CvZrxvv
